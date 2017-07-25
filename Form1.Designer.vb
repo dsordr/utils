@@ -22,40 +22,43 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.btn_kur_al = New System.Windows.Forms.Button()
+        Me.grid_kur = New System.Windows.Forms.DataGridView()
+        CType(Me.grid_kur, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btn_kur_al
         '
-        Me.Button1.Location = New System.Drawing.Point(214, 26)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_kur_al.Location = New System.Drawing.Point(355, 301)
+        Me.btn_kur_al.Name = "btn_kur_al"
+        Me.btn_kur_al.Size = New System.Drawing.Size(75, 23)
+        Me.btn_kur_al.TabIndex = 0
+        Me.btn_kur_al.Text = "Button1"
+        Me.btn_kur_al.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'grid_kur
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(43, 26)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox1.TabIndex = 1
+        Me.grid_kur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grid_kur.Location = New System.Drawing.Point(27, 22)
+        Me.grid_kur.Name = "grid_kur"
+        Me.grid_kur.Size = New System.Drawing.Size(240, 150)
+        Me.grid_kur.TabIndex = 1
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(560, 262)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(560, 364)
+        Me.Controls.Add(Me.grid_kur)
+        Me.Controls.Add(Me.btn_kur_al)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.grid_kur, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_kur_al As Button
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents grid_kur As DataGridView
 End Class
